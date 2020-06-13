@@ -1,0 +1,15 @@
+@import 'Variables.scss';
+
+.recent-projects{
+    max-width: 980px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    .title{
+        text-align: center;
+        h2{
+            font-weight: normal;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "./Variables.scss";
+footer{
+    display: flex;
+    background: $secondary_color;
+
+    .footer-content{
+        max-width: 980px;
+        width: 100%;
+        padding: 40px 0px;
+        margin: auto;
+
+        .footer-text{
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-social-media{
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                color: #fff;
+                margin-left: 10px;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
