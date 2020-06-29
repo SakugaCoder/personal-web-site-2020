@@ -1,34 +1,32 @@
 import React from 'react';
-import '../scss/Header.scss'
+import '../scss/Header.scss';
+import { useTranslation } from 'react-i18next';
 
-class Header extends React.Component{
-    render(){
+
+function Header(props){
+    
+        const { t } = useTranslation();
         return(
             <header>
                 <nav>
                     <div className="brand">
-                        <a href="index.html"><h1>DIEGO FERNANDO</h1></a>
+                        <a href="index.html"><h1>{t('brand')}</h1></a>
                     </div>
                     <ul className='navbar-nav'>
+                        <li><a href="#about">{t('about')}</a></li>
+                        <li><a href="#projects">{t('projects')}</a></li>
+                        <li><a href="#contact">{t('contact')}</a></li>
                         <li>
-                            <a href="#">ES <i className="fa fa-caret-down"></i></a>
-                            <ul>
-                                
-                                <ul>
-                                    <li><a href="#eng">ENG</a></li>
-                                    <li><a href="#esp">ESP</a></li>
-                                    <li><a href="#jap">JAP</a></li>
-                                </ul>
-                            </ul>
+                            <select onChange={props.handleLanChange}>
+                                <option value="en">ENG</option>
+                                <option value="es">ESP</option>
+                                <option value="jp">JAP</option>
+                            </select>
                         </li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>  
             </header>
         )
     }
-}
 
 export default Header;

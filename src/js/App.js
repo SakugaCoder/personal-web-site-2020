@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/App.css';
+import i18n from './i18n.js';
 import Header from './Header';
 import Hero from './Hero';
 import About from './About'
@@ -8,10 +9,21 @@ import RecentProjects from './RecentProjects';
 import Contact from './Contact';
 import Footer from './Footer';
 
+
+
+
 function App() {
+
+  const handleLanChange = (e) =>{
+    let lang = e.target.value;
+    console.log("Changing languague");
+    console.log(lang);
+    i18n.changeLanguage(lang)
+  };  
+
   return (
     <React.Fragment>
-      <Header></Header>
+      <Header handleLanChange={handleLanChange}></Header>
       <div className="container">
         <Hero></Hero>
         <About></About>

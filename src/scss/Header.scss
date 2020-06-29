@@ -41,7 +41,7 @@ header{
                     font-family:  'OpenSansLight';
                     text-decoration: none;
                     color: #000;
-                    display: block;
+                    display: inline-block;
                     padding: 5px 10px;
                     transition: all ease 0.2;
 
@@ -51,6 +51,18 @@ header{
                 }
                 ul{
                     display: none;
+                }
+
+                select{
+                    font-size: 18px;
+                    background-color: #fff;
+                    color: #000;
+                    border: none 0px #000;
+                    margin-right: 5px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
         }
