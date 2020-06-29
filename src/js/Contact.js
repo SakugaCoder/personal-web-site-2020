@@ -9,7 +9,7 @@ class Contact extends React.Component{
                 <div className="title">
                     <h2>CONTACT ME</h2>
                 </div>
-                <form action="" method="post">
+                <form netlify>
                     <div className="main-data">
                         <input type="text" id="name" name="name" placeholder="Name"></input>
                         <input type="email" id="email" name="email" placeholder="Emai"></input>
