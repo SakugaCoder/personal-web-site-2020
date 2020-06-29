@@ -14,7 +14,7 @@ function About(){
             </div>
             
             <div className="personal-picture img-circle">
-                <img src="assets/images/me.jpg"></img>
+                <img src="assets/images/me.jpg" alt="Porfile"></img>
             </div>
 
             <hr></hr>

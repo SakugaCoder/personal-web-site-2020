@@ -7,7 +7,7 @@ class TechStack extends React.Component{
             <div className="tech-stack">
                 <div className="tech-stack-container">
                     <h2 className="title">MY TECH STACK</h2>
-                    <img src="./assets/images/ts.png"></img>
+                    <img src="./assets/images/ts.png" alt="Tech stack"></img>
                 </div>
                 
             </div>

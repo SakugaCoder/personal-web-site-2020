@@ -6,7 +6,7 @@ class ProjectCard extends React.Component{
         return(
             <div className="card">
                 <div className="card-image">
-                    <img src="./assets/images/projects/apd.png"></img>
+                    <img src="./assets/images/projects/apd.png" alt="Automotive parts detection system"></img>
                 </div>
 
                 <div className="card-body">
@@ -24,7 +24,7 @@ class ProjectCard extends React.Component{
 
                     <div className="card-footer">
                         <div className="links">
-                        <a href="https://github.com/SakugaCoder/Automotive-parts-detection" target="_blank"><i className="fa fa-github-square fa-2x"></i></a>
+                        <a href="https://github.com/SakugaCoder/Automotive-parts-detection" target="_blank" rel="noopener noreferrer"><i className="fa fa-github-square fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
