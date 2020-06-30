@@ -1,31 +1,43 @@
 import React from 'react';
 import '../scss/Contact.scss';
+import { useTranslation } from 'react-i18next';
 
-class Contact extends React.Component{
-    render(){
-        return(
-            <div className="contact" id="contact">
 
-                <div className="title">
-                    <h2>CONTACT ME</h2>
-                </div>
-                <form name="contact" netlify>
-                    <div className="main-data">
-                        <input type="text" id="name" name="name" placeholder="Name"></input>
-                        <input type="email" id="email" name="email" placeholder="Emai"></input>
-                    </div>
-                    <div className="message">
-                        <textarea id="message" name="message" placeholder="Message"></textarea>
-                    </div>
+function Contact(){
 
-                    <div className="btn-form">
-                        <button type="submit">Send</button>
-                        <button type="rest" id="btnReset">Reset</button>
-                    </div>
-                </form>
-            </div>
-        );
+    const handleChange = (e) => { 
+
+
+    };
+
+    const resetForm = (e) => {
+        
     }
+
+    const { t } = useTranslation();
+    return(
+        <div className="contact" id="contact">
+
+            <div className="title">
+                <h2>{t('contact-me')}</h2>
+            </div>
+            <form name="contact" method="POST" data-netlify="true">
+                <div className="main-data">
+                    <input type="text" id="name" name="name" placeholder={t('name')}  onChange={handleChange}></input>
+                    <input type="email" id="email" name="email" placeholder={t('email')} onChange={handleChange}></input>
+                </div>
+                <div className="message">
+                    <textarea id="message" name="message" placeholder={t('message')} onChange={handleChange}></textarea>
+                </div>
+
+                <div className="btn-form">
+                    <button type="submit" id="btnSend">{t('send')}</button>
+                    <button type="rest" id="btnReset" onClick={ (e) => {e.preventDefault(e);}
+                     }>{t('reset')}</button>
+                </div>
+            </form>
+        </div>
+    );
 }
 
-export default Contact;
+export default Contact;      

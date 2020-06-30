@@ -1,18 +1,25 @@
 @import 'Variables.scss';
 
 .card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
     max-width: 300px;
     width: 100%;
+    height: auto;
     box-shadow: $shadow;
     padding: 15px;
     border-radius: 20px;
 
     .card-image{
-        img{
-            display: block;
-            max-width: 100%;
-            margin: auto;
-        }
+        display: block;
+        max-width: 100%;
+        margin: auto;
+        min-height: 100px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .card-body{

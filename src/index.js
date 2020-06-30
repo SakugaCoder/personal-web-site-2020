@@ -7,6 +7,7 @@ import './fonts/font-awesome/css/font-awesome.min.css';
 import App from './js/App';
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

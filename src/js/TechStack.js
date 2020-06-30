@@ -1,18 +1,21 @@
 import React from 'react';
 import '../scss/TechStack.scss';
+import { useTranslation } from 'react-i18next';
 
-class TechStack extends React.Component{
-    render(){
-        return(
-            <div className="tech-stack">
-                <div className="tech-stack-container">
-                    <h2 className="title">MY TECH STACK</h2>
-                    <img src="./assets/images/ts.png" alt="Tech stack"></img>
+function TechStack(){
+
+    const { t } = useTranslation();
+    return(
+        <div className="tech-stack">
+            <div className="tech-stack-container">
+                    <h2 className="title">{t('tech-stack')}</h2>
+                <div className="tech-stack-content">
+
                 </div>
-                
             </div>
-        );
-    }
+            
+        </div>
+    );
 }
 
 export default TechStack;

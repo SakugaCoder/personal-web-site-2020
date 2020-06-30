@@ -18,9 +18,9 @@ function Header(props){
                         <li><a href="#contact">{t('contact')}</a></li>
                         <li>
                             <select onChange={props.handleLanChange}>
-                                <option value="en">ENG</option>
-                                <option value="es">ESP</option>
-                                <option value="jp">JAP</option>
+                                <option value="en">{t('en')}</option>
+                                <option value="es">{t('sp')}</option>
+                                <option value="jp">{t('jp')}</option>
                             </select>
                         </li>
                     </ul>

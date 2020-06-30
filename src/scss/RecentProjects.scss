@@ -6,10 +6,16 @@
     margin: auto;
     padding: 20px;
     box-sizing: border-box;
+    
     .title{
         text-align: center;
         h2{
             font-weight: normal;
         }
+    }
+
+    .recent-projects-cards{
+        display: flex;
+        justify-content: center;
     }
 }

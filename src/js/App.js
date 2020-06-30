@@ -8,6 +8,7 @@ import TechStack from './TechStack';
 import RecentProjects from './RecentProjects';
 import Contact from './Contact';
 import Footer from './Footer';
+import ProjectCard from './ProjectCard';
 
 
 
@@ -19,7 +20,8 @@ function App() {
     console.log("Changing languague");
     console.log(lang);
     i18n.changeLanguage(lang)
-  };  
+  };
+    
 
   return (
     <React.Fragment>
