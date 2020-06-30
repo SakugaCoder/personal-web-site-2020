@@ -32,7 +32,7 @@ function ProjectCard(){
 
     return  <div className="card"> <div className="card-content">
     
-        <div className="card-image" style={ {backgroundImage: "url("+project.img+")", backgroundSize: "100% 100%", backgroundRepeat:"no-repeat", width:"200px", height:"200px"} }>
+        <div className="card-image" style={ {backgroundImage: "url("+project.img+")", backgroundSize: "cover", backgroundRepeat:"no-repeat", width:"200px", height:"200px"} }>
         </div>
 
         <div className="card-body">
