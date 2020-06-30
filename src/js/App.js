@@ -8,7 +8,6 @@ import TechStack from './TechStack';
 import RecentProjects from './RecentProjects';
 import Contact from './Contact';
 import Footer from './Footer';
-import ProjectCard from './ProjectCard';
 
 
 

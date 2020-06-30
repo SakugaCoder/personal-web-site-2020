@@ -10,10 +10,6 @@ function Contact(){
 
     };
 
-    const resetForm = (e) => {
-        
-    }
-
     const { t } = useTranslation();
     return(
         <div className="contact" id="contact">
