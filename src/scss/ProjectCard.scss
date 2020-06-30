@@ -1,52 +1,64 @@
 @import 'Variables.scss';
 
 .card{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    box-shadow: $shadow;
-    padding: 15px;
-    border-radius: 20px;
+    display: inline-block;
+    width: 30%;
+    .card-content{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        min-width: 250px;
 
-    .card-image{
-        display: block;
-        max-width: 100%;
-        margin: auto;
-        min-height: 100px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .card-body{
-        .card-title{
-            font-weight: normal;
-            text-align: center;
+        height: auto;
+        box-shadow: $shadow;
+        padding: 15px;
+        border-radius: 20px;
+    
+        .card-image{
+            display: block;
+            max-width: 100%;
+            margin: auto;
+            min-height: 100px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
-
-        .card-subtitle{
-            font-family: OpenSansLight;
-            text-align: center;
-            font-weight: normal;
-        }
-
-        .card-text{
-            text-align: justify;
-        }
-
-        .card-footer{
-            display: flex;
-            .links{
-                display: block;
-                margin: auto;
-                a{
-                    color: #000;
+    
+        .card-body{
+            .card-title{
+                font-weight: normal;
+                text-align: center;
+            }
+    
+            .card-subtitle{
+                font-family: OpenSansLight;
+                text-align: center;
+                font-weight: normal;
+            }
+    
+            .card-text{
+                text-align: justify;
+            }
+    
+            .card-footer{
+                display: flex;
+                .links{
+                    display: block;
+                    margin: auto;
+                    a{
+                        color: #000;
+                    }
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 960px){
+    .card{
+        display: block;
+        width: 100%;
     }
 }

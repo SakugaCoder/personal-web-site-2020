@@ -68,3 +68,19 @@ header{
         }
     }
 }
+
+@media screen and (max-width: 490px){
+    header{
+        nav{
+            .navbar-nav{
+                li{
+                    a{
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}

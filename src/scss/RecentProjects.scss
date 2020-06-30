@@ -19,3 +19,11 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width:960px){
+    .recent-projects{
+        .recent-projects-cards{
+            display: block;
+        }
+    }
+}
