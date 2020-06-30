@@ -1,8 +1,10 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
+  .use(LanguageDetector)
   .init({
     resources: {
         en: {
@@ -16,6 +18,7 @@ i18n
                 "contact": "CONTACT",
                 "carrier": "SOFTWARE ENGINEER",
                 "cv": "Download Resume",
+                "cv-pdf": "./assets/docs/BTDF_CV_ENG_2.pdf",
                 "about-title": "About",
                 "about-me": `I am a Software Engineer with experience in Frontend, Backend, Mobil and Desktop development. I have profesional experience creating web apps.
                 I like to connect and create interfaces between realworld and digital. I develop functional and appealing systems and UI.`,
@@ -60,6 +63,7 @@ i18n
                 "contact": "CONTACTO",
                 "carrier": "INGENIERO DE SOFTWARE",
                 "cv": "Descargar CV",
+                "cv-pdf": "./assets/docs/BTDF_CV_2.pdf",
                 "about-title": "Acerca de mi",
                 "about-me": `Soy un ingeniero de software con experiencia en desarrollo frontend, backend, móvil y de escritorio. Tengo experiencia profesional creando aplicaciones web.
                 Me gusta conectar y crear interfaces entre el mundo real y lo digital. Desarrollo sistemas/interfaces funcionales y atractivos.`,
@@ -104,6 +108,7 @@ i18n
                 "contact": "連絡先",
                 "carrier": "ソフトウェアエンジニア",
                 "cv": "ダウンロード履歴書",
+                "cv-pdf": "./assets/docs/BTDF_CV_ENG_2.pdf",
                 "about-title": "私について",
                 "about-me": "私は、フロントエンド、バックエンド、モービル、デスクトップ開発の経験を持つソフトウェアエンジニアです。 ウェブアプリの作成に関する専門的な経験があります。 現実世界とデジタルのインターフェースを接続して作成するのが好きです。 機能的で魅力的なシステムを開発しています",
                 "tech-stack": "マイテックスタック",
@@ -138,7 +143,7 @@ i18n
             }
         }
     },
-    lng: "en",
+    //lng: "en",
     fallbackLng: "en",
     whitelist: ["en", "es", "jp"],
     interpolation: {
