@@ -17,7 +17,7 @@ function Contact(){
             <div className="title">
                 <h2>{t('contact-me')}</h2>
             </div>
-            <form name="contact" action="mailto:diego.bocanegra.trenado@gmail.com"  method="post" enctype="text/plain">
+            <form name="contact" action="mailto:diego.bocanegra.trenado@gmail.com"  method="post" encType="text/plain">
                 <div className="main-data">
                     <input type="text" id="name" name="name" placeholder={t('name')}  onChange={handleChange}></input>
                     <input type="email" id="mail" name="mail" placeholder={t('email')} onChange={handleChange}></input>

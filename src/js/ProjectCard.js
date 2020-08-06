@@ -30,7 +30,7 @@ function ProjectCard(){
     ];
     const projects = projects_info.map( (project, index)  => {
 
-    return  <div className="card"> <div className="card-content">
+    return  <div key={index} className="card"> <div className="card-content">
     
         <div className="card-image" style={ {backgroundImage: "url("+project.img+")", backgroundSize: "cover", backgroundRepeat:"no-repeat", width:"200px", height:"200px"} }>
         </div>
