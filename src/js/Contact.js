@@ -17,7 +17,7 @@ function Contact(){
             <div className="title">
                 <h2>{t('contact-me')}</h2>
             </div>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" netlify>
                 <div className="main-data">
                     <input type="text" id="name" name="name" placeholder={t('name')}  onChange={handleChange}></input>
                     <input type="email" id="email" name="email" placeholder={t('email')} onChange={handleChange}></input>
@@ -28,8 +28,6 @@ function Contact(){
 
                 <div className="btn-form">
                     <button type="submit" id="btnSend">{t('send')}</button>
-                    <button type="rest" id="btnReset" onClick={ (e) => {e.preventDefault(e);}
-                     }>{t('reset')}</button>
                 </div>
             </form>
         </div>
