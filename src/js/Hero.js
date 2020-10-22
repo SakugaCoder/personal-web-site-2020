@@ -1,6 +1,7 @@
 import React from 'react'
 import '../scss/Hero.scss';
 import { useTranslation } from 'react-i18next';
+import {Frame} from 'framer';
 
 function Hero(){
         const {t} = useTranslation();

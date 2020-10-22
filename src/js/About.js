@@ -1,7 +1,7 @@
 import React from 'react';
 import '../scss/About.scss';
 import { useTranslation } from 'react-i18next';
-
+import { Frame } from 'framer';
 
 function About(){
     const { t } = useTranslation();
@@ -12,8 +12,8 @@ function About(){
                     <h2>{t('about-title')}</h2>
                 </div>
                 
-                <div className="personal-picture img-circle">
-                </div>
+                <Frame className="personal-picture img-circle">
+                </Frame>
 
                 <hr></hr>
                 
@@ -22,7 +22,6 @@ function About(){
                     <p>
                         {t('about-me')}
                     </p>
-                    
                 </div>
             </div>
             
