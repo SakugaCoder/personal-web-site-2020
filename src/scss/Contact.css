@@ -1,0 +1,110 @@
+.contact {
+  padding: 10px;
+}
+
+.contact .title {
+  display: block;
+}
+
+.contact .title h2 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+.contact form .main-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact form .main-data #name {
+  width: 50%;
+}
+
+.contact form .main-data #mail {
+  width: 40%;
+}
+
+.contact form input[type="text"], .contact form input[type="email"],
+.contact form textarea {
+  padding: 5px;
+  border: solid 2px #000;
+  font-family: OpenSansLight;
+}
+
+.contact form .message {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact form .message textarea {
+  width: 100%;
+  min-height: 100px;
+}
+
+.contact form .btn-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact form .btn-form button {
+  width: 20%;
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.contact form .btn-form button:hover {
+  cursor: pointer;
+}
+
+.contact form .btn-form #btnSend {
+  background-color: #5e60ce;
+  color: #fff;
+}
+
+.contact form .btn-form #btnSend:hover {
+  opacity: 0.8;
+}
+
+.contact form .btn-form #btnReset {
+  margin-left: 20px;
+  background-color: #fff;
+  color: #000;
+  border: solid 1px #000;
+}
+
+.contact form .btn-form #btnReset:hover {
+  background-color: #000;
+  color: #fff;
+}
+/*# sourceMappingURL=Contact.css.map */
