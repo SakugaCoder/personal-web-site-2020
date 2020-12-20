@@ -1,0 +1,26 @@
+.title {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.title hr {
+  display: inline-block;
+  background: #F6F7EB;
+  border: 1px solid #F6F7EB;
+  min-width: 60px;
+  max-width: 120px;
+  width: 80%;
+}
+/*# sourceMappingURL=Title.css.map */

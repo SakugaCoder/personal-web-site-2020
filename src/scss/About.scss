@@ -1,8 +1,10 @@
+@import './Variables.scss';
+
 .about{
-    background: rgb(128,255,219);
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
+    color: $light;
 
     .content{
         max-width: 980px;
@@ -32,12 +34,7 @@
             border-radius: 100%;
         }
     
-        hr{
-            background: #000;
-            border: 1px solid #000;
-            max-width: 120px;
-            width: 100%;
-        }
+
     
         .text-content{
             display: block;
@@ -46,7 +43,7 @@
             margin: auto;
             p{
                 text-align: center;
-                font-family: OpenSansLight;
+                font-family: JetBrainsMono-Light;
             }
         }
     }

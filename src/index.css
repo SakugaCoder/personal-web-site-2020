@@ -3,20 +3,22 @@
 
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url("./fonts/OpenSans-Regular.ttf") ;
+  font-family: 'JetBrainsMono-Regular';
+  src: url("./fonts/JetBrainsMono-Regular.ttf") ;
 }
 
 @font-face {
-  font-family: 'OpenSansLight';
-  src: url("./fonts/OpenSans-Light.ttf") ;
+  font-family: 'JetBrainsMono-Light';
+  src: url("./fonts/JetBrainsMono-Light.ttf") ;
 }
 *{
-  font-family: OpenSans, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'JetBriansMono-Regular', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 body{
   top: 0;
   padding: 0;
   margin: 0;
+  background-color: #182935;
+  color: #F6F7EB;
 }

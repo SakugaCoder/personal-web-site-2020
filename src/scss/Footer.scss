@@ -1,7 +1,7 @@
 @import "./Variables.scss";
 footer{
     display: flex;
-    background: $secondary_color;
+    background: $primary_color;
 
     .footer-content{
         max-width: 980px;
@@ -16,7 +16,7 @@ footer{
 
         .footer-social-media{
             display: flex;
-            margin-top: 20px;
+            margin-top: 40px;
             justify-content: center;
             align-items: center;
 
@@ -24,7 +24,7 @@ footer{
                 color: #fff;
                 margin-left: 10px;
                 &:hover{
-                    opacity: 0.8;
+                    color: $secondary_color
                 }
             }
         }

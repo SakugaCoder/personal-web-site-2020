@@ -1,6 +1,7 @@
 @import './Variables.scss';
 
 .contact{
+    background-color: $acent;
     padding: 10px;
     .title{
         display: block;
@@ -31,8 +32,10 @@
         input[type="text"],input[type="email"],
         textarea{
             padding: 5px;
-            border: solid 2px #000;
-            font-family: OpenSansLight;
+            border: solid 2px $light;
+            background-color: rgba(0, 0, 0, 0.0);
+            font-family: 'JetBrainsMono-Light';
+            color: $light;
         }
 
         .message{

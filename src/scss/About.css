@@ -1,5 +1,4 @@
 .about {
-  background: #80ffdb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,6 +7,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 40px;
+  color: #F6F7EB;
 }
 
 .about .content {
@@ -41,13 +41,6 @@
   border-radius: 100%;
 }
 
-.about .content hr {
-  background: #000;
-  border: 1px solid #000;
-  max-width: 120px;
-  width: 100%;
-}
-
 .about .content .text-content {
   display: block;
   max-width: 80%;
@@ -57,6 +50,6 @@
 
 .about .content .text-content p {
   text-align: center;
-  font-family: OpenSansLight;
+  font-family: JetBrainsMono-Light;
 }
 /*# sourceMappingURL=About.css.map */

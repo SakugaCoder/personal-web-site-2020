@@ -1,5 +1,6 @@
 import React from 'react'
 import '../scss/Hero.scss';
+import Button from './Button';
 import { useTranslation } from 'react-i18next';
 import {Frame} from 'framer';
 
@@ -10,14 +11,21 @@ function Hero(){
         <div className="hero">
             <div className="hero-info">
                 <div className="hero-details">
-                    <p>BOCANEGRA TRENADO DIEGO FERNANDO</p>
-                    <p>[{t('carrier')}]</p>
+                    <p className="greeting">Hi, I am</p>
+                    <p className="name">Diego Fernando Trenado</p>
+                    <p className="goal">Convierto ideas en productos tangibles</p>
+
+                    <Button text="CONTACT" type="primary" url="#contact" ></Button>
                 </div>
 
+                <div className="hero-img">
+                </div>
+
+                {/* 
                 <a href={t('cv-pdf')} className="btn-download-cv">
                     <span>{t('cv')}</span> <i className="fa fa-file"></i>
                 </a>
-
+                */}
             </div>
 
             

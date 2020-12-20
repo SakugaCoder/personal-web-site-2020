@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/Header.scss';
+import Button from './Button';
 import { useTranslation } from 'react-i18next';
 
 
@@ -14,15 +15,21 @@ function Header(props){
                     </div>
                     <ul className='navbar-nav'>
                         <li><a href="#about">{t('about')}</a></li>
+                        <li><a href="#experience">EXPERIENCE</a></li>
                         <li><a href="#projects">{t('projects')}</a></li>
                         <li><a href="#contact">{t('contact')}</a></li>
-                        <li>
-                            <select onChange={props.handleLanChange}>
+                        <li style={ {marginRight: 10} }>
+                            <select id='selectLanguague' onChange={props.handleLanChange} autoFocus="true">
                                 <option value="en">{t('en')}</option>
                                 <option value="es">{t('sp')}</option>
                                 <option value="jp">{t('jp')}</option>
                             </select>
+                            <label for='selectLanguague'>
+                                <span class='fa fa-chevron-down'></span>
+                            </label>
+                            
                         </li>
+                        <li> <Button ukr='cv.pdf' text='RESUME' type='primary'></Button></li>
                     </ul>
                 </nav>  
             </header>
