@@ -1,15 +1,16 @@
 @import 'Variables.scss';
 
 .card{
-    display: inline-block;
-    width: 30%;
+    margin-top: 60px;
+    min-width: 100%;
     .card-content{
         box-sizing: border-box;
         display: flex;
-        flex-direction: column;
-        margin-left: 20px;
+        flex-direction: row;
         min-width: 250px;
-
+        
+        align-items: center;
+        justify-content: space-around;
         height: auto;
         box-shadow: $shadow;
         padding: 15px;
@@ -17,8 +18,7 @@
     
         .card-image{
             display: block;
-            max-width: 100%;
-            margin: auto;
+            width: 40%;
             min-height: 100px;
             background-size: cover;
             background-position: center;
@@ -26,14 +26,18 @@
         }
     
         .card-body{
+            display: block;
+            width: 40%;
             .card-title{
                 font-weight: normal;
-                text-align: center;
+                text-align: left;
+                color: $secondary_color;
+                text-transform: uppercase;
             }
     
             .card-subtitle{
                 font-family: 'JetBrainsMono-Light';
-                text-align: center;
+                text-align: left;
                 font-weight: normal;
             }
     
@@ -47,7 +51,7 @@
                     display: block;
                     margin: auto;
                     a{
-                        color: #000;
+                        color: $light;
                     }
                 }
             }
@@ -56,9 +60,20 @@
 }
 
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 715px){
     .card{
-        display: block;
-        width: 100%;
+        .card-content{
+            flex-direction: column !important;
+    
+            .card-iamge{
+                width: 80% !important ;
+                margin: auto;
+            }
+    
+            .card-body{
+                width: 80% !important;
+            }
+        }
     }
+    
 }

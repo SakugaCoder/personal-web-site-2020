@@ -5,10 +5,14 @@ $secondary_color: #09D593;
 $light: #F6F7EB;
 $acent: #253C4D;
 $dark_text: #E0E1D9;
+$red: #EF233C;
 
 $shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 $primary_shadow: 0px 0px 20px $secondary_color;
+$primary_shadow_effect: 0px 0px 10px $secondary_color;
+$dark_shadow_effect: 0px 0px 10px $primary_color;
 $dark_shadow: 0px 0px 20px $primary_color;
 
 $navbar_background_color: $primary_color;
 $navbar_color: $light;
+

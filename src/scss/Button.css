@@ -4,17 +4,45 @@
   background: gray;
   text-decoration: none;
   color: #F6F7EB;
-}
-
-.btn:hover {
-  text-decoration: none;
-  cursor: pointer;
+  border: none;
 }
 
 .btn-primary {
   background-color: #09D593;
   -webkit-box-shadow: 0px 0px 20px #09D593;
           box-shadow: 0px 0px 20px #09D593;
+  color: "#ffffff";
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.btn-primary:hover {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px #09D593;
+          box-shadow: 0px 0px 10px #09D593;
+}
+
+.btn-secondary {
+  background-color: #182935;
+  -webkit-box-shadow: 0px 0px 20px #182935;
+          box-shadow: 0px 0px 20px #182935;
+  color: "#ffffff";
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.btn-secondary:hover {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px #182935;
+          box-shadow: 0px 0px 10px #182935;
+}
+
+.btn-red {
+  background-color: #EF233C;
+  -webkit-box-shadow: 0px 0px 20px #EF233C;
+          box-shadow: 0px 0px 20px #EF233C;
   color: "#ffffff";
 }
 /*# sourceMappingURL=Button.css.map */

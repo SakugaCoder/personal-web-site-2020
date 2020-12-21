@@ -1,6 +1,6 @@
 .card {
-  display: inline-block;
-  width: 30%;
+  margin-top: 60px;
+  min-width: 100%;
 }
 
 .card .card-content {
@@ -9,12 +9,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 20px;
+      -ms-flex-direction: row;
+          flex-direction: row;
   min-width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: auto;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -24,22 +28,28 @@
 
 .card .card-content .card-image {
   display: block;
-  max-width: 100%;
-  margin: auto;
+  width: 40%;
   min-height: 100px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.card .card-content .card-body {
+  display: block;
+  width: 40%;
+}
+
 .card .card-content .card-body .card-title {
   font-weight: normal;
-  text-align: center;
+  text-align: left;
+  color: #09D593;
+  text-transform: uppercase;
 }
 
 .card .card-content .card-body .card-subtitle {
   font-family: 'JetBrainsMono-Light';
-  text-align: center;
+  text-align: left;
   font-weight: normal;
 }
 
@@ -59,13 +69,22 @@
 }
 
 .card .card-content .card-body .card-footer .links a {
-  color: #000;
+  color: #F6F7EB;
 }
 
-@media screen and (max-width: 960px) {
-  .card {
-    display: block;
-    width: 100%;
+@media screen and (max-width: 715px) {
+  .card .card-content {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .card .card-content .card-iamge {
+    width: 80% !important;
+    margin: auto;
+  }
+  .card .card-content .card-body {
+    width: 80% !important;
   }
 }
 /*# sourceMappingURL=ProjectCard.css.map */

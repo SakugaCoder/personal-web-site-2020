@@ -1,11 +1,11 @@
 import React from 'react'
 import '../scss/Hero.scss';
 import Button from './Button';
-import { useTranslation } from 'react-i18next';
-import {Frame} from 'framer';
+//import { useTranslation } from 'react-i18next';
+
 
 function Hero(){
-        const {t} = useTranslation();
+        //const {t} = useTranslation();
         return(
             
         <div className="hero">
@@ -13,9 +13,9 @@ function Hero(){
                 <div className="hero-details">
                     <p className="greeting">Hi, I am</p>
                     <p className="name">Diego Fernando Trenado</p>
-                    <p className="goal">Convierto ideas en productos tangibles</p>
+                    <p className="goal">I transform ideas into real things.</p>
 
-                    <Button text="CONTACT" type="primary" url="#contact" ></Button>
+                    <Button text="CONTACT" type="primary" color='primary' url="#contact" ></Button>
                 </div>
 
                 <div className="hero-img">

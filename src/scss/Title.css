@@ -23,4 +23,17 @@
   max-width: 120px;
   width: 80%;
 }
+
+.title h2 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.dark hr {
+  border-color: #182935;
+}
+
+.dark h2 {
+  color: #182935;
+}
 /*# sourceMappingURL=Title.css.map */

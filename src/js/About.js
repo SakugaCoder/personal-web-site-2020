@@ -2,7 +2,6 @@ import React from 'react';
 import '../scss/About.scss';
 import Title from './Title';
 import { useTranslation } from 'react-i18next';
-import { Frame } from 'framer';
 
 function About(){
     const { t } = useTranslation();
@@ -12,18 +11,17 @@ function About(){
                 <div className="section-title">
                     <Title text={t('about-title')} />
                 </div>
-                
-                <div className="personal-picture img-circle">
-                </div>
 
-                
-                
-                
-                <div className="text-content">
-                    <p>
-                        {t('about-me')}
-                    </p>
+                <div className="about-content">
+                    <div className="text-content">
+                        <p>
+                            {t('about-me')}
+                        </p>
+                    </div>
+                    <div className="personal-picture img-circle"></div>
                 </div>
+                
+                
             </div>
             
         </div>

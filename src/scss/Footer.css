@@ -33,6 +33,8 @@ footer .footer-content .footer-social-media {
 footer .footer-content .footer-social-media a {
   color: #fff;
   margin-left: 10px;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
 }
 
 footer .footer-content .footer-social-media a:hover {

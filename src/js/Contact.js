@@ -2,6 +2,9 @@ import React from 'react';
 import '../scss/Contact.scss';
 import { useTranslation } from 'react-i18next';
 
+import Title from './Title';
+
+import Button from './Button';
 
 function Contact(){
 
@@ -13,10 +16,8 @@ function Contact(){
     const { t } = useTranslation();
     return(
         <div className="contact" id="contact">
-
-            <div className="title">
-                <h2>{t('contact-me')}</h2>
-            </div>
+            <Title text={t('contact-me')} color='dark'> </Title>
+            
             <form name="contact" action="mailto:diego.bocanegra.trenado@gmail.com"  method="post" encType="text/plain">
                 <div className="main-data">
                     <input type="text" id="name" name="name" placeholder={t('name')}  onChange={handleChange}></input>
@@ -27,8 +28,11 @@ function Contact(){
                 </div>
 
                 <div className="btn-form">
-                    <button type="submit" id="btnSend">{t('send')}</button>
-                    <button type="reset" name="reset" id="btnReset">Reset</button> 
+                    
+                    
+                    <Button type='reset' text='RESET' color='secondary'></Button>
+                    
+                    <Button type='submit' text={t('send')} color='primary'></Button>
                 </div>
             </form>
         </div>

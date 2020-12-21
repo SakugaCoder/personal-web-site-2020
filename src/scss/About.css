@@ -1,4 +1,5 @@
 .about {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,8 +27,19 @@
   font-weight: normal;
 }
 
-.about .content .personal-picture {
-  background-image: url("/assets/images/me.jpg");
+.about .content .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.about .content .about-content .personal-picture {
+  background-image: url("../me.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -41,15 +53,28 @@
   border-radius: 100%;
 }
 
-.about .content .text-content {
+.about .content .about-content .text-content {
   display: block;
   max-width: 80%;
   width: 100%;
   margin: auto;
 }
 
-.about .content .text-content p {
+.about .content .about-content .text-content p {
   text-align: center;
   font-family: JetBrainsMono-Light;
+}
+
+.about .content .about-content .text-content .highlight {
+  color: #09D593;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-content {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
 }
 /*# sourceMappingURL=About.css.map */

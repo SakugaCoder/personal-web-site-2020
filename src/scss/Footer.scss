@@ -23,6 +23,7 @@ footer{
             a{
                 color: #fff;
                 margin-left: 10px;
+                transition: all ease 0.2s;
                 &:hover{
                     color: $secondary_color
                 }
