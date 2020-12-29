@@ -15,7 +15,6 @@ i18n
                 "brand": "DIEGO",
                 "about": "ABOUT",
                 "projects": "PROJECTS",
-                "contact": "CONTACT",
                 "carrier": "SOFTWARE ENGINEER",
                 "cv": "RESUME",
                 "cv-pdf": "./assets/docs/BTDF_CV_ENG_2.pdf",
@@ -71,7 +70,6 @@ i18n
                 "salutate": 'Hola, Yo soy',
                 "full-name": 'Diego Fernando Trenado',
                 "goal": 'Transformo ideas en productos tangibles',
-                "contact": 'CONTACTO',
                 "about-title": "Acerca de mi",
                 "about-me": `Soy un ingeniero de software con experiencia en desarrollo frontend, backend, móvil y de escritorio. Tengo experiencia profesional creando aplicaciones web.
                  Me gusta conectar y crear interfaces entre el mundo real y lo digital. Desarrollo sistemas/interfaces funcionales y atractivos.`,
@@ -113,7 +111,6 @@ i18n
                 "brand": "ディエゴ",
                 "about": "約",
                 "projects": "プロジェクト",
-                "contact": "連絡先",
                 "carrier": "ソフトウェアエンジニア",
                 "cv": "履歴書",
                 "cv-pdf": "./assets/docs/BTDF_CV_ENG_2.pdf",
