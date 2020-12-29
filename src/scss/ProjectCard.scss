@@ -52,7 +52,12 @@
                     margin: auto;
                     a{
                         color: $light;
+                        transition: all ease 0.3s;
+                        &:hover{
+                            color: $secondary_color;
+                        }
                     }
+
                 }
             }
         }

@@ -30,7 +30,7 @@ function Contact(){
                 <div className="btn-form">
                     
                     
-                    <Button type='reset' text='RESET' color='secondary'></Button>
+                    <Button type='reset' text={t('reset')} color='secondary'></Button>
                     
                     <Button type='submit' text={t('send')} color='primary'></Button>
                 </div>

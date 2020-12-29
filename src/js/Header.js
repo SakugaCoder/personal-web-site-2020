@@ -26,18 +26,15 @@ function Header(props){
                         <li><button onClick={ () => scroll('about') }>{t('about')}</button></li>
                         <li><button onClick={ () => scroll('projects') }>{t('projects')}</button></li>
                         <li><button onClick={ () => scroll('contact') }>{t('contact')}</button></li>
-                        <li style={ {marginRight: 10} }>
+                        <li class='languague-select'>
                             <select id='selectLanguague' onChange={props.handleLanChange} autoFocus={true}>
                                 <option value="en">{t('en')}</option>
                                 <option value="es">{t('sp')}</option>
                                 <option value="jp">{t('jp')}</option>
                             </select>
-                            <label htmlFor='selectLanguague'>
-                                <span className='fa fa-chevron-down'></span>
-                            </label>
                             
                         </li>
-                        <li> <Button ukr='cv.pdf' text='RESUME' color='primary'></Button></li>
+                        <li> <Button url={t('cv-pdf')} text={t('cv')} color='primary'></Button></li>
                     </ul>
                 </nav>  
             </header>

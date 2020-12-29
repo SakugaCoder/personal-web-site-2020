@@ -68,18 +68,17 @@ header{
                     font-size: 16px;
                     background-color: $primary_color;
                     color: $light;
-                    border: none 0px #000;
+                    
                     z-index: 99;
-                    -moz-appearance: none;
-                    appearance: none;
-                    margin-right: 2px;
-                    border-bottom: 1px solid rgba(0,0,0,0.0);
+                    
                     transition: all ease 0.5s;
-                    &:hover{
-                        cursor: pointer;
-                        border-bottom: 1px solid $light;
-                    }
+
+                    border: solid 1px $light;
+                    padding: 12px 5px;
                 }
+            }
+            .languague-select{
+                margin-right: 10px;
             }
         }
     }
