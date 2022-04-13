@@ -1,7 +1,7 @@
-
-
-$primary_color: #182935;
-$secondary_color: #09D593;
+$background: #121212;
+$surface: #1E1E1E;
+$primary_color: #0CDAC5;
+$secondary_color: #BB86FC;
 $light: #F6F7EB;
 $acent: #253C4D;
 $dark_text: #E0E1D9;
@@ -13,6 +13,6 @@ $primary_shadow_effect: 0px 0px 10px $secondary_color;
 $dark_shadow_effect: 0px 0px 10px $primary_color;
 $dark_shadow: 0px 0px 20px $primary_color;
 
-$navbar_background_color: $primary_color;
+$navbar_background_color: $background;
 $navbar_color: $light;
-
+$default_transition: all ease 0.4s;

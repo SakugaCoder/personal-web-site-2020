@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './fonts/OpenSans-Regular.ttf';
-import './fonts/OpenSans-Light.ttf';
 import './index.css';
 import './fonts/font-awesome/css/font-awesome.min.css';
-import App from './js/App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../scss/App.css';
+//import '../scss/App.css';
 import i18n from './i18n.js';
 import Header from './Header';
 import Hero from './Hero';
@@ -8,8 +8,7 @@ import TechStack from './TechStack';
 import RecentProjects from './RecentProjects';
 import Contact from './Contact';
 import Footer from './Footer';
-
-
+import LanguageSwitcher from './LanguageSwitcher.js';
 
 
 function App() {
@@ -27,6 +26,7 @@ function App() {
       <Header handleLanChange={handleLanChange}></Header>
       <div className="container">
         <Hero></Hero>
+        <LanguageSwitcher handleLanChange={ handleLanChange } />
         <About></About>
         <TechStack></TechStack>
         <RecentProjects></RecentProjects>

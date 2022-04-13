@@ -1,8 +1,6 @@
 import React from 'react'
 import '../scss/Hero.scss';
 import Button from './Button';
-//import { useTranslation } from 'react-i18next';
-
 import { useTranslation} from 'react-i18next';
 
 function Hero(){
@@ -13,14 +11,22 @@ function Hero(){
         <div className="hero">
             <div className="hero-info">
                 <div className="hero-details">
-                    <p className="greeting">{t('salutate')}</p>
-                    <p className="name">{t('full-name')}</p>
-                    <p className="goal">{t('goal')}.</p>
+                    <h2 className="rol">FRONTEND DEVELOPER</h2>
+                    <h2 className="name">{t('full-name')}</h2>
+                    <p className="goal">{t('goal')}</p>
 
                     <Button text={t('contact')} type="primary" color='primary' url="#contact" ></Button>
+                    <Button text={t('hire')} type="secondary" color='secondary' url="#contact"></Button>
+
+                    <div className='social-media'>
+                        <div className='social-media-item'>
+                            
+                        </div>
+                    </div>
                 </div>
 
-                <div className="hero-img">
+                <div className='hero-img-container'>
+                    <div className="hero-img"></div>
                 </div>
             </div>
 

@@ -2,7 +2,6 @@
 
 header{
     position: fixed;
-    position: fi;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -11,7 +10,8 @@ header{
     display: flex;
     box-shadow: $shadow;
     nav{
-        width: 95%;
+        width: 90%;
+        max-width: 1024px;
         background-color: $navbar_background_color;
         display: flex;
         margin: auto;
@@ -23,16 +23,19 @@ header{
             margin-left: 10px;
             a{
                 text-decoration: none;
-                color: $navbar_color;
+                color: #fff;
+                transition: $default_transition;
                 h1{
-                    font-size: 22px;
+                    font-size: 36px;
+                    letter-spacing: 5px;
+                    font-weight: 400;
                 }
                 &:hover{
                     cursor: pointer;
+                    color: $primary_color;
                 }
             }
         }
-
 
         .navbar-nav{
             list-style: none;
@@ -44,12 +47,12 @@ header{
                 position: relative;
                 display: inline-block;
                 button{
-                    font-family:  'JetBrainsMono-Light';
                     text-decoration: none;
                     color: $navbar_color;;
                     display: inline-block;
                     padding: 5px 10px;
                     transition: all ease 0.2;
+                    letter-spacing: 2px;
                     background: none;
                     border: none;
                     font-size: 16px;
@@ -62,16 +65,19 @@ header{
                     &::after{
                         content: '';
                         position: absolute;
-                        height: 2px;
+                        height: 4px;
                         width: 0%;
+                        top: 40%;
                         left: 50%;
                         bottom: 0;
+                        border-radius: 4px;
                         transition: all ease 0.6s;
-                        background: $secondary_color;
+                        background: $primary_color;
+                        opacity: 0.8;
                     }
 
                     &:hover::after{
-                        background: $secondary_color;
+                        background: $primary_color;
                         width: 100%;
                         left: 0%;
                     }
@@ -80,8 +86,13 @@ header{
                     display: none;
                 }
 
+                .btn-cv{
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
                 select{
-                    font-family:  'JetBrainsMono-Light';
                     font-size: 16px;
                     background-color: $primary_color;
                     color: $light;
@@ -96,21 +107,36 @@ header{
             }
             .languague-select{
                 margin-right: 10px;
+                border: 5px solid #000;
+            }
+        }
+
+        .menu-logo{
+            display: none;
+            &:hover{
+                cursor: pointer;
+            }
+            .line{
+                width: 60px;
+                background-color: $light;
+                height: 6px;
+            }
+            .line:nth-child(2){
+                margin-top: 2rem;
             }
         }
     }
 }
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 768px){
     header{
         nav{
             .navbar-nav{
-                li{
-                    button{
-                        display: none;
-                    }
-                }
-                
+                display: none;
+            }
+
+            .menu-logo{
+                display: block;
             }
         }
     }

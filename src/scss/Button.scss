@@ -3,38 +3,35 @@
 .btn{
     display: inline-block;
     padding: 15px 20px !important;
-    background: gray;
     text-decoration: none;
-    color: $light;
+    color: #000;
     border: none;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .btn-primary{
-    background-color: $secondary_color;
-    box-shadow: $primary_shadow;
-    color: "#ffffff";
+    background-color: $primary_color;
+    color: #000;
     transition: all ease 0.2s;
     &:hover{
         text-decoration: none;
         cursor: pointer;
-        box-shadow: $primary_shadow_effect;
     }
 }
 
 .btn-secondary{
-    background-color: $primary_color;
-    box-shadow: $dark_shadow;
-    color: "#ffffff";
+    background-color: $secondary_color;
     transition: all ease 0.2s;
     &:hover{
         text-decoration: none;
         cursor: pointer;
-        box-shadow: $dark_shadow_effect;
     }
 }
 
 .btn-red{
     background-color: $red;
     box-shadow: 0px 0px 20px $red;
-    color: "#ffffff";
 }
