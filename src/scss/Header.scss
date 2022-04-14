@@ -11,7 +11,7 @@ header{
     box-shadow: $shadow;
     nav{
         width: 90%;
-        max-width: 1024px;
+        max-width: $max_width;
         background-color: $navbar_background_color;
         display: flex;
         margin: auto;

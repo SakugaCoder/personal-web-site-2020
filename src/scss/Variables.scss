@@ -13,6 +13,7 @@ $primary_shadow_effect: 0px 0px 10px $secondary_color;
 $dark_shadow_effect: 0px 0px 10px $primary_color;
 $dark_shadow: 0px 0px 20px $primary_color;
 
-$navbar_background_color: $background;
+$navbar_background_color: $surface;
 $navbar_color: $light;
 $default_transition: all ease 0.4s;
+$max_width: 1536px;

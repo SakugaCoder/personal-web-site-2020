@@ -13,8 +13,8 @@ import LanguageSwitcher from './LanguageSwitcher.js';
 
 function App() {
 
-  const handleLanChange = (e) =>{
-    let lang = e.target.value;
+  const handleLanChange = (lang) =>{
+    // let lang = e.target.value;
     console.log("Changing languague");
     console.log(lang);
     i18n.changeLanguage(lang)

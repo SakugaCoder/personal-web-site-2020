@@ -8,8 +8,17 @@
 .hero{
     width: 100%;
     height: calc(100vh - 80px);
+    background-color: $surface;
     display: flex;
-    flex-direction: column; 
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: $max_width;
+        width: 90%;
+        margin: auto;
+    }
 
     .hero-info{
         display: flex;
@@ -67,19 +76,58 @@
     }
 
     .social-media{
+        margin-top: 30px;
         display: flex;
-        padding: 0px 10px;
-        height: 10%;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        
+        .social-media-item{
+            background-color: rgba(18, 18, 18, 0.4);
+            padding: 10px;
+            border-radius: 30px;
+            min-width: 40px;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: rgba(18, 18, 18, 0.8);
+            }
+
+        }
+
         a{
             font-size: 20px;
-            color: #fff;
+            color: $secondary_color;
+            fill: $secondary_color;
             transition: all ease 0.3s;
-            margin-left: 10px;
-            &:hover{
-                color: $secondary_color;
+            margin-right: 10px;
+            
+
+            svg{
+                fill: $secondary_color;
+                transition: $default_transition;
+                width: 30px;
+                height: 30px;
             }
         }
+    }
+
+    .cls-1{
+        fill: none;
+        stroke:$secondary_color;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+
+    }
+}
+
+@media(max-width: 768px){
+    .hero-info{
+        flex-direction: column!important;
+    }
+
+    .hero-details{
+        width: 100%;
     }
 }
