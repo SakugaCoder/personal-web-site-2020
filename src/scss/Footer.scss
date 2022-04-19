@@ -1,7 +1,9 @@
 @import "Variables.scss";
 footer{
     display: flex;
-    background: $primary_color;
+    background: $background;
+    position: relative;
+    z-index: 4;
 
     .footer-content{
         max-width: 980px;
@@ -11,23 +13,56 @@ footer{
 
         .footer-text{
             color: #fff;
+            letter-spacing: 1px;
             text-align: center;
         }
 
-        .footer-social-media{
-            display: flex;
-            margin-top: 40px;
-            justify-content: center;
-            align-items: center;
 
+        .social-media{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .social-media-item{
+                background-color: rgba(30, 30, 30, 0.4);
+                padding: 10px;
+                border-radius: 30px;
+                min-width: 40px;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                    background-color: rgba(30, 30, 30, 0.8);
+                    transform: translateY(-5px);
+                }
+    
+            }
+    
             a{
-                color: #fff;
-                margin-left: 10px;
-                transition: all ease 0.2s;
-                &:hover{
-                    color: $secondary_color
+                font-size: 20px;
+                color: $secondary_color;
+                fill: $secondary_color;
+                transition: all ease 0.3s;
+                margin-right: 10px;
+                
+    
+                svg{
+                    fill: $secondary_color;
+                    transition: $default_transition;
+                    width: 30px;
+                    height: 30px;
                 }
             }
+        }
+    
+        .cls-1{
+            fill: none;
+            stroke:$secondary_color;
+            stroke-linecap:round;
+            stroke-linejoin:round;
+    
         }
     }
 }

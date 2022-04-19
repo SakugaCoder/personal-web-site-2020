@@ -1,10 +1,11 @@
-@import 'variables.scss';
+@import 'Variables.scss';
 
 .language-select-container{
     width: 100%;
     margin: auto;
     display: block;
     position: fixed;
+    z-index: 4;
     bottom: 0;
     left: 0;
 

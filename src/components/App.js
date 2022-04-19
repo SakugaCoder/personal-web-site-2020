@@ -4,7 +4,8 @@ import i18n from './i18n.js';
 import Header from './Header';
 import Hero from './Hero';
 import About from './About'
-import TechStack from './TechStack';
+import Work from './Work';
+// import TechStack from './TechStack';
 import RecentProjects from './RecentProjects';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -28,7 +29,8 @@ function App() {
         <Hero></Hero>
         <LanguageSwitcher handleLanChange={ handleLanChange } />
         <About></About>
-        <TechStack></TechStack>
+        <Work></Work>
+        {/* <TechStack></TechStack> */}
         <RecentProjects></RecentProjects>
         <Contact></Contact>
       </div>

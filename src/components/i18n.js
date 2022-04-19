@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .use(LanguageDetector)
@@ -24,6 +25,9 @@ i18n
                 "contact": 'CONTACT',
                 "hire": 'HIRE',
                 "about-title": "About",
+                "about-me-1": 'Hola mi nombre es Diego y soy un apasionado por la programación y el diseño. Comence a desarrollar productos para la web desde el año 2017 como un hoby.',
+                "about-me-2": 'He tenido la oportunidad de estar en diversas empresas para aprender y mejorar mis habilidades tecnicas. Soy una persona orientada a resultados que siempre trata de conseguir las mejores soluciones para cada proyecto.',
+                "about-me-3": 'Estas son algunas de las tecnologias con las que trabajo hoy en dia.',
                 "about-me": `I am a Software Engineer with experience in Frontend, Backend, Mobile and Desktop development. I have professional experience developing web apps.
                 I like to connect and create interfaces between real and digital world. I develop functional and appealing systems and UI.`,
                 "tech-stack": "MY TECH STACK",
@@ -73,8 +77,11 @@ i18n
                 "full-name": 'Diego Fernando Trenado',
                 "goal": 'Soy un desarrollador Frontend apasionado con el diseño y creación de interfaces. Tengo experiencia en desarrollo de aplicaciones de escritorio, mobil y programación de microcontroladores.',
                 "about-title": "Acerca de mi",
-                "about-me": `Soy un ingeniero de software con experiencia en desarrollo frontend, backend, móvil y de escritorio. Tengo experiencia profesional creando aplicaciones web.
-                 Me gusta conectar y crear interfaces entre el mundo real y lo digital. Desarrollo sistemas/interfaces funcionales y atractivos.`,
+                "about-me-1": 'Hola mi nombre es Diego y soy un apasionado por la programación y el diseño. Comence a desarrollar productos para la web desde el año 2017 como un hoby.',
+                "about-me-2": 'He tenido la oportunidad de estar en diversas empresas para aprender y mejorar mis habilidades tecnicas. Soy una persona orientada a resultados que siempre trata de conseguir las mejores soluciones para cada proyecto.',
+                "about-me-3": 'Estas son algunas de las tecnologias con las que trabajo hoy en dia.',
+                "about-me": "test",
+              
                 "tech-stack": "TECNOLOGíAS QUE USO",
                 "contact-me": "CONTACTO",
                 "email": "Correo",
@@ -122,6 +129,9 @@ i18n
                 "contact": '連絡先',
                 "hire": 'コントラター',
                 "about-title": "私について",
+                "about-me-1": 'Hola mi nombre es Diego y soy un apasionado por la programación y el diseño. Comence a desarrollar productos para la web desde el año 2017 como un hoby.',
+                "about-me-2": 'He tenido la oportunidad de estar en diversas empresas para aprender y mejorar mis habilidades tecnicas. Soy una persona orientada a resultados que siempre trata de conseguir las mejores soluciones para cada proyecto.',
+                "about-me-3": 'Estas son algunas de las tecnologias con las que trabajo hoy en dia.',
                 "about-me": "私は、フロントエンド、バックエンド、モービル、デスクトップ開発の経験を持つソフトウェアエンジニアです。 ウェブアプリの作成に関する専門的な経験があります。 現実世界とデジタルのインターフェースを接続して作成するのが好きです。 機能的で魅力的なシステムを開発しています",
                 "tech-stack": "マイテックスタック",
                 "contact-me": "連絡先",

@@ -23,9 +23,9 @@ export default function LanguageSwitcher(props){
             <div className='language-select-content'>
                 <div className='language-select'>
                     <div className={`optional-languages ${ optionalLanguagesVisible ? 'show': 'hidden'}`}>
-                        { languageStatus.optional.map( item =>{
+                        { languageStatus.optional.map( (item, i) =>{
                             return(
-                            <div className='current-language' style={ {marginBottom: 10} } onClick={ () => changeCurrentLanguage(item)}>
+                            <div className='current-language' style={ {marginBottom: 10} } onClick={ () => changeCurrentLanguage(item)} key={ i }>
                                 <img className='flag-img' src={`./assets/images/${item}-flag.png`} alt={item + ' flag'} />
                                 <span><p>{t(item)}</p></span>
                             </div>

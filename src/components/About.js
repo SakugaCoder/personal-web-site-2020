@@ -8,17 +8,37 @@ function About(){
     return(
         <div className="about" id="about">
             <div className="content">
-                <div className="section-title">
-                    <Title text={t('about-title')} />
-                </div>
-
                 <div className="about-content">
+                    <div className="personal-picture img-circle"></div> 
                     <div className="text-content">
+                        <div className="section-title">
+                            <Title text={t('about-title')} />
+                        </div>
                         <p>
-                            {t('about-me')}
+                            {t('about-me-1')}
                         </p>
+
+                        <p>
+                            {t('about-me-2')}
+                        </p>
+
+                        <p>
+                            {t('about-me-3')}
+                        </p>
+
+                        <div className='tech-stack-list'>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>WordPress</li>
+                            </ul>
+                            <ul>
+                                <li>JavaScript (ES6)</li>
+                                <li>React</li>
+                                <li>Node.Js</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="personal-picture img-circle"></div>
                 </div>
                 
                 

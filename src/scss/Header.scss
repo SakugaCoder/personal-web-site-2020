@@ -1,7 +1,9 @@
 @import 'Variables.scss';
+@import 'mediaQueries.scss';
 
 header{
     position: fixed;
+    z-index: 10;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -17,6 +19,30 @@ header{
         margin: auto;
         align-items: center;
         justify-content: space-between;
+
+        #menu-checkbox{
+            display: none;
+        }
+
+        @include responsive(){
+            #menu-checkbox:checked ~ .navbar-nav{
+                left: 0%;
+            }
+
+            #menu-checkbox:checked + #menu-logo .line-1{
+                transform: rotate(45deg);
+                margin-top: 20px;
+            }
+
+            
+            #menu-checkbox:checked + #menu-logo .line-2{
+                margin-top: -6px;
+                transform: rotate(-45deg);
+                
+                
+            }
+        }
+        
         .brand{
             display: inline-block;
 
@@ -43,9 +69,30 @@ header{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            transition: $default_transition;
+
+            @include responsive(){
+                position: absolute;
+                left: -100%;
+                top: 90px;
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                padding: 10px;
+                padding-top: 20px;
+                height: calc(100vh - 89.61px);
+                justify-content: flex-start;
+                background-color: $surface;
+            }
+
             li{
                 position: relative;
                 display: inline-block;
+
+                @include responsive(){
+                    margin-top: 20px;
+                }
+
                 button{
                     text-decoration: none;
                     color: $navbar_color;;
@@ -113,6 +160,11 @@ header{
 
         .menu-logo{
             display: none;
+            min-height: 44px;
+            @include responsive(){
+                display: block;
+            }
+
             &:hover{
                 cursor: pointer;
             }
@@ -120,7 +172,19 @@ header{
                 width: 60px;
                 background-color: $light;
                 height: 6px;
+                transform-origin: center center;
+                border-radius: 10px;
             }
+
+            .line-1{
+                transition: all ease 0.6s;
+
+            }
+
+            .line-2{
+                transition: all ease 0.6s;
+            }
+
             .line:nth-child(2){
                 margin-top: 2rem;
             }
@@ -128,17 +192,41 @@ header{
     }
 }
 
-@media screen and (max-width: 768px){
-    header{
-        nav{
-            .navbar-nav{
-                display: none;
-            }
-
-            .menu-logo{
-                display: block;
-            }
-        }
+@keyframes topBarInitialAnimation {
+    from{
     }
 
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bottomBarInitialAnimation {
+    from{
+        transform: rotate(-45deg);
+    }
+
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes topBarAnimation {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes bottomBarAnimation {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(-45deg);
+    }
 }

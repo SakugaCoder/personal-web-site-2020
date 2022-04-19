@@ -5,6 +5,7 @@
 *, *::after, *::before{
   font-family: 'Poppins', 'sans-serif', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  box-sizing: border-box;
 }
 
 body{

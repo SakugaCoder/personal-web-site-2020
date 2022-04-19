@@ -1,53 +1,140 @@
-@import 'Variables.scss';
+@import 'Variables';
+@import 'mediaQueries';
 
 .contact{
-    background-color: $acent;
-    padding: 10px;
+    background-color: $surface;
+    width: 100%;
+    padding: 100px 0px;
 
-    
+    .title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 
-    form{
-        min-height: 50vh;
-        max-width: 600px;
-        width: 100%;
+    .contact-container{
+        max-width: $max-width;
+        width: 90%;
         margin: auto;
-        .main-data{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            #name{
-                width:50%;
-            }
-            #mail{
-                width: 40%;
-            }
+        padding-top: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @media (max-width: 1070px){
+            flex-direction: column;
         }
 
-        input[type="text"],input[type="email"],
-        textarea{
-            font-size: 18px;
-            padding: 5px;
-            border: solid 2px $dark_text;
-            background-color: rgba(0, 0, 0, 0.0);
-            color: $dark_text;
-        }
+        .contact-info{
+            width: 40%;
+            @media (max-width: 1070px){
+                margin: auto;
+                width: 60%;
+                margin-bottom: 20px;
+            }
 
-        .message{
-            margin-top: 20px;
-            width: 100%;
-            display: flex;
-            textarea{
+            @include responsive(){
                 width: 100%;
-                min-height: 100px;
+            }
+            .contact-info-item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .contact-info-item-img{
+                    background-color: $secondary_color;
+                    padding: 10px;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    img{
+                        width: 36px;
+                    }
+                }
+                .contact-info-item-text{
+                    margin-left: 20px;
+                    color: $light;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
             }
         }
 
-        .btn-form{
-            display: flex;
-            margin: 40px auto;
-            flex-direction: row;
-            justify-content: space-around;
-            
-       }
+        form{
+            max-width: 600px;
+            width: 60%;
+            margin: auto;
+
+            @include responsive(){
+                max-width: 100%;
+                width: 100%;
+            }
+            .main-data{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                @include responsive(){
+                    flex-direction: column;
+                }
+                #tel{
+                    width: 28%;
+                    @include responsive(){
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                }
+                #mail{
+                    width: 68%;
+                    @include responsive(){
+                        width: 100%;
+                    }
+                }
+            }
+            & > input{
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            input[type="text"],input[type="email"],
+            textarea{
+                font-size: 18px;
+                padding: 10px;
+                border: solid 2px $dark_text;
+                background-color: rgba(0, 0, 0, 0.0);
+                color: $dark_text;
+                letter-spacing: 2px;
+
+                &::placeholder{
+                    color: rgba(203, 205, 214, 1);
+                }
+            }
+
+            input[type="text"],input[type="email"]{
+                border-radius: 60px;
+            }
+
+            .message{
+                margin-top: 20px;
+                width: 100%;
+                display: flex;
+                textarea{
+                    width: 100%;
+                    min-height: 100px;
+                    border-radius: 20px;
+                }
+            }
+
+            .btn-form{
+                display: flex;
+                margin: 40px auto;
+                flex-direction: row;
+                justify-content: space-between;
+                
+            }
+        }
     }
 }
