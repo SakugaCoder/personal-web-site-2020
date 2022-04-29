@@ -1,6 +1,7 @@
 import React from 'react';
 import '../scss/ProjectCard.scss';
 import { useTranslation } from 'react-i18next';
+import Fade from 'react-reveal/Fade';
 
 function ProjectCard(){
     const { t } = useTranslation();
@@ -32,11 +33,13 @@ function ProjectCard(){
         const isEven = (index % 2) === 0;
     return  <div key={index} className="card"> <div className={`card-content ${!isEven ? 'card-content-left' : ''}`}>
     
-        <div className="card-image" style={ {backgroundImage: "url("+project.img+")", backgroundSize: "cover", backgroundRepeat:"no-repeat"} }>
-            <div className="card-overlay"></div>
-        </div>
+        <Fade bottom delay={50}>
+            <div className="card-image" style={ {backgroundImage: "url("+project.img+")", backgroundSize: "cover", backgroundRepeat:"no-repeat"} }>
+                <div className="card-overlay"></div>
+            </div>
+        </Fade>
         
-
+        <Fade bottom delay={200}>
         <div className="card-body">
             <h3 className={`card-title ${isEven ? 'card-text-right' : 'card-text-left'}`}>
                 {project.name}
@@ -69,6 +72,7 @@ function ProjectCard(){
                 </div>
             </div>
         </div>
+        </Fade>
         
     </div></div>;
     });

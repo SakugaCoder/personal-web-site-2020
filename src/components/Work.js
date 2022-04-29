@@ -32,7 +32,7 @@ export default function Work(){
 
     ]
     return(
-        <div className="work" id="work">
+        <div className="experience" id="experience">
             <Title text='Donde he trabajado'></Title>
 
             <div className="job-list">

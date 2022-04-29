@@ -36,6 +36,7 @@ function Header(props){
                 
                 <ul className='navbar-nav'>
                     <li><button onClick={ () => { scroll('about'); closeMenu(); }}>{t('about') }</button></li>
+                    <li><button onClick={ () => { scroll('experience'); closeMenu(); }}>{t('experience')}</button></li>
                     <li><button onClick={ () => { scroll('projects'); closeMenu(); }}>{t('projects')}</button></li>
                     <li><button onClick={ () => { scroll('contact'); closeMenu(); }}>{t('contact')}</button></li>
                     <li> <a className='btn btn-primary btn-cv' href={t('cv-pdf')}> {t('cv')} </a></li>
