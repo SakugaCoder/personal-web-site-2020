@@ -1,9 +1,11 @@
 import React from "react";
 import Title from "./Title";
 import '../scss/Work.scss';
+import { useTranslation } from "react-i18next";
 
 export default function Work(){
 
+    const { t } = useTranslation();
     const jobList = [
         {
             title: 'Desarrollador Frontend',
@@ -33,9 +35,10 @@ export default function Work(){
     ]
     return(
         <div className="experience" id="experience">
-            <Title text='Donde he trabajado'></Title>
+            <Title text={t('experience')}></Title>
 
             <div className="job-list">
+                { t('experience')}
                 { jobList.map( (job, i) => {
                     return <div className="job-item" key={i}>
                         <div className="job-item-content">
