@@ -11,10 +11,10 @@ const spanishTranslation = {
         "hire": "CONTRATAR",
         "carrier": "INGENIERO DE SOFTWARE",
         "cv": "DESCARGAR CV",
-        "cv-pdf": "./assets/docs/BTDF_CV_2.pdf",
+        "cv-pdf": "./assets/docs/BTDF_CV_ENG.pdf",
         "salutate": 'Hola, Yo soy',
         "full-name": 'Diego Fernando Trenado',
-        "goal": 'Soy un desarrollador Frontend, Maker e Ingeniero en Sistemas Computacionales con sede en México. Me apasiona el diseño y desarrollo de aplicaciones web. Actualmente me encuentro trabajando en diversos proyectos en donde ademas de desarrollar ayudo a mejorar la estética, velocidad y funcionalidad de sitios web.',
+        "goal": 'oy Desarrollador Full Stack, Maker y Ingeniero en Sistemas Computacionales con sede en México. Me apasiona diseñar, desarrollar y optimizar aplicaciones web. Actualmente, estoy construyendo productos escalables y confiables utilizando varios servicios de la nube, y mejorando la estética, el rendimiento y la funcionalidad de aplicaciones en varios proyectos.',
         "about-title": "Acerca de mi",
         "about-me-1": 'Hola mi nombre es Diego y soy un apasionado por la programación y el diseño. Comencé a desarrollar productos para la web desde el año 2017 como un hoby.',
         "about-me-2": 'He tenido la oportunidad de estar en diversas empresas para aprender y mejorar mis habilidades. Soy una persona orientada a resultados que siempre trata de conseguir las mejores soluciones para cada proyecto.',
@@ -32,22 +32,22 @@ const spanishTranslation = {
 
         "recent-projects": "PROYECTOS RECIENTES",
 
-        "name-project-1": "Detección de partes automotrices",
-        "tech-project-1": "Python, Tensorflow, Google Maps API",
-        "description-project-1": "Modelo de clasificación de imagenes para detección de partes automotrices y localización de tiendas cercanas para su remplazo. Implementado en una interfaz gráfica con Tkiner",
-        "img-project-1": "/assets/images/projects/apd.png",
+        "name-project-1": "Encárgamelo. Pedidos en línea para restaurantes",
+        "tech-project-1": "Firebase, Cloud Firestone, React, Tailwind CSS",
+        "description-project-1": "plataforma de pedidos en línea que permite a los restaurantes gestionar y publicar sus menús, y a los clientes hacer pedidos directamente en la página de menú específica del restaurante.",
+        "img-project-1": "/assets/images/projects/encargamelo.png",
         "github-project-1": "https://github.com/SakugaCoder/Automotive-parts-detection",
 
-        "name-project-2": "Guante controlador inalámbrico para presentaciones empresariales",
-        "tech-project-2": "Python, Pyserial, pyAutoGUI, Arudino, 433 Mhz Module",
-        "description-project-2": "Wearable hecho con Arduino que envia commandos a travez de un modulo de 433 MHz para control remoto de una PC por medio de la libreria PyAutoGUI",
-        "img-project-2": "/assets/images/projects/gc.png",
+        "name-project-2": "Gestor de documentos empresariales",
+        "tech-project-2": "Python, Flask, MySQL, Ubuntu Server, React, Styled-Components",
+        "description-project-2": "Plataforma web para administrar documentos empresariales, con un sistema de roles y permisos, y un panel de control para la administración de usuarios y documentos.",
+        "img-project-2": "/assets/images/projects/Dashboard.jpg",
         "github-project-2": "https://github.com/SakugaCoder/GloveController",
 
-        "name-project-3": "Sistema para lista de compras hecho con React JS, Flask y MongoDB",
-        "tech-project-3": "React JS, React Router, Fetch, Bootstrap, MongoDB, Python, Flask",
-        "description-project-3": "Sistema para lista de compras creado usando React JS con operaciones CRUD ejecutadas en una aplicación Flask con MongoDB",
-        "img-project-3": "/assets/images/projects/tbapp.jpg",
+        "name-project-3": "AI chatbot para ventas de llantas",
+        "tech-project-3": "Lambda, API Gateway, Facebok Cloud API, OpenAI Assistant API, Python",
+        "description-project-3": "Asistente basado en WhatsApp para gestionar y promover la venta de llantas, utilizando arquitectura Serverless, la API de OpenAI Assistant y la API de Facebook Cloud.",
+        "img-project-3": "/assets/images/projects/chat.png",
         "github-project-3": "https://github.com/SakugaCoder/ThingsToBuy-ReactJS"
   }
 };

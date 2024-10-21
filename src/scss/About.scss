@@ -32,7 +32,7 @@
                 list-style: none;
                 padding: 0;
 
-                &:nth-child(2){
+                &:nth-child(2), &:nth-child(3){
                     margin-left: 20px;
                 }
                 li{
@@ -43,9 +43,9 @@
                     &::before{
                         content: '';
                         display: inline-block;
-                        height: 18px;
-                        width: 6px;
-                        border-radius: 5px;
+                        height: 12px;
+                        width: 12px;
+                        border-radius: 100%;
                         background-color: $primary_color;
                         margin-right: 10px;
                     }
@@ -64,7 +64,7 @@
             }
             
             .personal-picture{
-                background-image: url("../me.jpg");
+                background-image: url("../me_soldering.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 display: block;

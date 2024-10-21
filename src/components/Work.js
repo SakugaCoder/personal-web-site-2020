@@ -8,6 +8,17 @@ export default function Work(){
     const { t } = useTranslation();
     const jobList = [
         {
+            title: 'Lead Software Enginee',
+            company: 'Quinta',
+            period: 'Nov 2023 - Presente, El Márques',
+            details: 'Lideré tres proyectos diferentes con un equipo de cinco personas, desarrollando aplicaciones escalables y responsivas utilizando frameworks modernos de JavaScript (Vue, React). Diseñé e implementé soluciones full-stack en AWS utilizando arquitectura sin servidor (Serverless) y multi-tenant, empleando varios servicios como Step Functions, Lambda, API Gateway, Amplify, EC2. Colaboré con equipos multifuncionales, incluidos gestión de producto y diseñadores UI/UX, para alinear los objetivos comerciales con los técnicos. Desarrollé y diseñé un asistente basado en WhatsApp para gestionar y promover la venta de llantas, utilizando arquitectura sin servidor (Serverless), la API de OpenAI Assistant y la API de Facebook Cloud.'
+        },        {
+            title: 'Fullstack Developer',
+            company: 'TSM',
+            period: 'Jun 2022 - Nov 2023 - 1 año 5 meses , El Márques',
+            details: 'Desarrollé una tienda de llantas en línea. Diseñé la interfaz de usuario con Figma y principios de diseño, codifiqué con JavaScript Vanilla, HTML y CSS. Creé un sistema para cargar un catálogo de llantas en formato CSV y XLSX. Desarrollé una API RESTful usando Express y MongoDB. Implementé la tienda en línea en AWS utilizando EC2.'
+        },
+        {
             title: 'Desarrollador Frontend',
             company: 'TSM',
             period: 'Jul 2021 - Presente - 7 meses, El Márques',

@@ -35,12 +35,20 @@ function About(){
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
-                                    <li>WordPress</li>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
                                 </ul>
                                 <ul>
-                                    <li>JavaScript (ES6)</li>
+                                    <li>Git</li>
                                     <li>React</li>
                                     <li>Node.Js</li>
+                                    <li>AWS</li>
+                                </ul>
+                                <ul>
+                                    <li>Express</li>
+                                    <li>MongoDB</li>
+                                    <li>MySQL</li>
+                                    <li>Tailwind CSS</li>
                                 </ul>
                             </div>
                         </div>

@@ -2,8 +2,18 @@ import React from 'react'
 import '../scss/Hero.scss';
 import Button from './Button';
 import { useTranslation} from 'react-i18next';
+import { scroller } from 'react-scroll';
+
 
 function Hero(){
+    const scroll = element => {
+        scroller.scrollTo(element,{
+            duration: 1000,
+            smooth: true,
+            offset: -100,
+            spy: true
+        })
+    };
 
     const {t} = useTranslation();
     return(     
@@ -11,12 +21,12 @@ function Hero(){
             <div className='hero-content'>
                 <div className="hero-info">
                     <div className="hero-details">
-                        <h2 className="rol">FRONTEND DEVELOPER</h2>
+                        <h2 className="rol">FULL STACK DEVELOPER</h2>
                         <h2 className="name">{t('full-name')}</h2>
                         <p className="goal">{t('goal')}</p>
 
-                        <Button text={t('contact')} type="primary" color='primary' url="#contact" ></Button>
-                        <Button text={t('hire')} type="secondary" color='secondary' url="#contact"></Button>
+                        <Button handleOnClick={ () => { scroll('contact') }} text={t('contact')} type="primary" color='primary' url="#contact" ></Button>
+                        <Button handleOnClick={ () => { scroll('contact') }} text={t('hire')} type="secondary" color='secondary' url="#contact"></Button>
 
                         <div className="social-media">
                             <a href="https://www.linkedin.com/in/diego-fernando-bocanegra-trenado-169022171" target="_blank" rel="noopener noreferrer" className='social-media-item'>

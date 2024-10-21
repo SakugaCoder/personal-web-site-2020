@@ -9,10 +9,10 @@ const japaneseTranslation = {
         "projects": "プロジェクト",
         "carrier": "ソフトウェアエンジニア",
         "cv": "履歴書",
-        "cv-pdf": "./assets/docs/BTDF_CV_ENG_2.pdf",
+        "cv-pdf": "./assets/docs/BTDF_CV_ENG.pdf",
         "salutate": 'こんにちは、私は',
         "full-name": 'ディエゴフェルナンドトレナド',
-        "goal": "私はメキシコを拠点とするフロントエンド開発者、メーカー、コンピューターシステムエンジニアです。 私はWebアプリケーションの設計と開発に情熱を注いでいます。 私は現在、さまざまなプロジェクトに取り組んでおり、開発に加えて、Webサイトの美学、速度、機能の向上を支援しています。",
+        "goal": "私はメキシコを拠点とするフルスタック開発者、メイカー、およびコンピューターシステムエンジニアです。ウェブアプリケーションの設計、開発、最適化に情熱を持っています。現在、クラウドプロバイダーを使用してスケーラブルで信頼性の高い製品を構築しており、さまざまなプロジェクトでウェブサイトの美観、パフォーマンス、機能性の向上にも取り組んでいます。",
         "contact": '連絡先',
         "hire": 'コントラター',
         "about-title": "私について",
@@ -31,22 +31,23 @@ const japaneseTranslation = {
 
         "recent-projects": "最近のプロジェクト",
 
-        "name-project-1": "自動車部品検出",
-        "tech-project-1": "Python, Tensorflow, Google Maps API",
-        "description-project-1": "自動車部品を検出し、Googleマップでショップの近くに配置して交換するための画像分類モデル。 tkinter GUIで実装されています。",
-        "img-project-1": "/assets/images/projects/apd.png",
+
+        "name-project-1": "Encargamelo. Online orders for restaurants",
+        "tech-project-1": "Firebase, Cloud Firestone, React, Tailwind CSS",
+        "description-project-1": "Platform that allows restaurants to manage and publish their menus, and customers to place orders directly on the restaurant's specific menu page.",
+        "img-project-1": "/assets/images/projects/encargamelo.png",
         "github-project-1": "https://github.com/SakugaCoder/Automotive-parts-detection",
 
-        "name-project-2": "ビジネスプレゼンテーション用のワイヤレスコントローラーグローブ",
-        "tech-project-2": "Python, Pyserial, pyAutoGUI, Arudino, 433 Mhz Module",
-        "description-project-2": "PyAutoGUIライブラリを使用したリモートPC制御用の433 MHzモジュールを介してコマンドを送信するarduinoで作られたウェアラブル",
-        "img-project-2": "/assets/images/projects/gc.png",
+        "name-project-2": "Documet manager system",
+        "tech-project-2": "Python, Flask, MySQL, Ubuntu Server, React, Styled-Components",
+        "description-project-2": "Web platform to manage business documents, with a role and permission system, and a control panel for user and document management.",
+        "img-project-2": "/assets/images/projects/Dashboard.jpg",
         "github-project-2": "https://github.com/SakugaCoder/GloveController",
 
-        "name-project-3": "React JS、Flask、MongoDBで作られた購入リストシステム",
-        "tech-project-3": "React JS, React Router, Fetch, Bootstrap, MongoDB, Python, Flask",
-        "description-project-3": "MongoDBのFlaskアプリで行われたCRUD操作でReact JSを使用して作成された購入リストシステム",
-        "img-project-3": "/assets/images/projects/tbapp.jpg",
+        "name-project-3": "AI chatbot for tire sales",
+        "tech-project-3": "Lambda, API Gateway, Facebok Cloud API, OpenAI Assistant API, Python",
+        "description-project-3": "WhatsApp-based assistant to manage and promote tire sales, using a Serverless architecture, the OpenAI Assistant API, and the Facebook Cloud API.",
+        "img-project-3": "/assets/images/projects/chat.png",
         "github-project-3": "https://github.com/SakugaCoder/ThingsToBuy-ReactJS"
     
     }

@@ -3,7 +3,7 @@ import '../scss/Button.scss';
 
 function Button(props){
     const btn_clases = `btn btn-${props.color}`;
-    const b = props.type ? <button type={props.type} className={btn_clases} href={props.url}>{props.text}</button> : <a type={props.type} className={btn_clases} href={props.url}>{props.text}</a>;
+    const b = props.type ? <button type={props.type} onClick={ props.handleOnClick ? props.handleOnClick : () => {} } className={btn_clases} href={props.url}>{props.text}</button> : <a type={props.type} className={btn_clases} href={props.url}>{props.text}</a>;
     return(
         b
     );

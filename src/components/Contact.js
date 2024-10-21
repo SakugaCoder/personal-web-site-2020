@@ -35,7 +35,7 @@ function Contact(){
                         </div>
 
                         <span className='contact-info-item-text'>
-                            Monterrey, Mexico
+                            Querétaro, Mexico
                         </span>
                     </div>
                     <div className="contact-info-item">

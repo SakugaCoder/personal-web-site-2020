@@ -81,9 +81,10 @@
         .hero-img{
             min-width: 255px;
             min-height: 255px;
-            background-image: url("/./me_soldering.png");
+            background-image: url("/./linkedinProfile.jpeg");
             background-size: 100%;
             background-repeat: no-repeat;
+            border-radius: 100%;
 
             @include responsive(){
                 display: none;
